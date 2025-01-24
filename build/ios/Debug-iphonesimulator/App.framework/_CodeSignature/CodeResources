@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		NDWHxG4InNhImGsMJcai/R04TjY=
+		+butf64cAjRvDnAtTK7ADDCqrq8=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		pMpffo02U5F/gAWjG5YR8NGrcyM=
+		5voFfbVpDvuaaWDZDOm4i3yMnQc=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -24,6 +24,10 @@
 		<data>
 		Zs2kILOHMbYLCNeYgvYkQakBrY4=
 		</data>
+		<key>flutter_assets/assets/images/.DS_Store</key>
+		<data>
+		/ZZxGVZxjtKDF1LPHddE1Giv9Pw=
+		</data>
 		<key>flutter_assets/assets/images/Drawer.png</key>
 		<data>
 		xD/bHZPcXk+MCeKM1QMVYoMJI1g=
@@ -32,9 +36,21 @@
 		<data>
 		v3m2fyIFK4DlkB5sfJTbnXhKjqw=
 		</data>
+		<key>flutter_assets/assets/images/Snackish%20Home.pdf</key>
+		<data>
+		zz4SPg6IZrzixwluC047k9yOIQY=
+		</data>
+		<key>flutter_assets/assets/images/Snackish%20Splash.pdf</key>
+		<data>
+		pB6kMT960TF3lXaX27nqQjn3nl8=
+		</data>
 		<key>flutter_assets/assets/images/Start.png</key>
 		<data>
 		ptO+Fy+XjiFKNR/I9ihkZWTonwM=
+		</data>
+		<key>flutter_assets/assets/images/Vector.png</key>
+		<data>
+		1g/oEwGOQtjWRdmgLxaoOBbrcc8=
 		</data>
 		<key>flutter_assets/assets/images/bg_mainscreen.png</key>
 		<data>
@@ -90,7 +106,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		QSuuV4PTZPkj4tYy60fkOzZdx60=
+		PPr60601Rmt+zy+ZLUT3FtGuXoE=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -107,14 +123,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vy81yEoPOOeKiWqadVYPHSbf4JT8lvmpghlQ3vbKfNM=
+			nKOyo/IgsCXMIQoeZuFc1EdzZDt3LZLAA60kCe4Pk/s=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gu45cjslcr5yLFegHmXRO7n4hmhUW7E6gHQnl/6fTTI=
+			gTMRFeUIL3kZYEHJeSYq67/KaXJgduVJL9FKvwj7q4o=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -145,11 +161,32 @@
 			UAI5q+rjca8f1s0S3ufrcakL01StBATxbVSq3t9qSDM=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/Snackish%20Home.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OtBDIH0QpINKAecV1KL1w+xRFcP3E0/4lb89kZlDl4o=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Snackish%20Splash.pdf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gBAk/mdCIyqPxyrudTXlO7IigGCMrFk2stX7eGKK2OA=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/Start.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			MVGREzezJ7Sbfl1JfrxZ0c6Ltt7OBjz+3eib6/GwsAU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/Vector.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CJ/ypRQnD3q6Rnm465vNn/At6WmYttz6bq46DkQ+pj4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/bg_mainscreen.png</key>
@@ -247,7 +284,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YxlyfXoAce6mIguBKXZO9GG3EmiY4t+awOkaxKvGNP8=
+			WOBESyWYZGYCpKlVyZxs/yH2z2eBO28Z7vMp5Mna5nA=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:yumyumsnackys/detail_screen/detail_screen.dart';
 
 void main() {
   runApp(HomeScreen());
@@ -26,6 +28,105 @@ class HomeScreen extends StatelessWidget {
               height: double.infinity,
               width: double.infinity,
             ),
+            Positioned(
+              top: 80,
+              right: 85,
+              child: Text(
+                "Choose Your Favorite",
+                style: GoogleFonts.alata(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 120,
+              right: 290,
+              child: Text(
+                "Snack",
+                style: GoogleFonts.alata(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 170,
+              left: 20,
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.white30),
+                    height: 40,
+                    width: 10,
+                    child: Center(
+                      child: Text(
+                        "All catogorie",
+                        style: TextStyle(fontSize: 10),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.white30),
+                    height: 40,
+                    width: 100,
+                    child: Center(
+                      child: Text(
+                        "Salty",
+                        style: GoogleFonts.alata(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.white30),
+                    height: 40,
+                    width: 100,
+                    child: Center(
+                      child: Text(
+                        "Sweet",
+                        style: GoogleFonts.alata(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.white30),
+                    height: 40,
+                    width: 100,
+                    child: Center(
+                      child: Text(
+                        "Deliciuse",
+                        style: GoogleFonts.alata(
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
             // Positioned ist gut zu genauen aus tangieren von Objekten
             Positioned(
               top: 240,
@@ -49,7 +150,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white70),
+                        color: Colors.white),
                   ),
                   SizedBox(
                     height: 5,
@@ -71,12 +172,21 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-                  Text(
-                    "A 13.99",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white70),
+                  Row(
+                    children: [
+                      SizedBox(
+                        height: 15,
+                        width: 15,
+                        child: Image.asset("assets/images/Vector.png"),
+                      ),
+                      Text(
+                        "13.99",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 50,
@@ -84,12 +194,16 @@ class HomeScreen extends StatelessWidget {
                   Container(
                     height: 40,
                     width: 100,
-                    color: const Color.fromARGB(255, 227, 106, 227),
+                    color: const Color.fromARGB(255, 189, 61, 189),
+                    child: Center(
+                        child: Text(
+                      "Add to order",
+                      style: GoogleFonts.alata(color: Colors.white),
+                    )),
                   )
                 ],
               ),
             ),
-
             Positioned(
               height: 225,
               width: 225,
@@ -103,6 +217,178 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+            ),
+            Positioned(
+              bottom: 320,
+              right: 230,
+              child: Text("We Recommend",
+                  style: GoogleFonts.alata(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white)),
+            ),
+            Positioned(
+              bottom: 30,
+              left: 20,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: const Color.fromARGB(255, 155, 84, 179),
+                ),
+                height: 280,
+                width: 200,
+                child: Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailScreen()));
+                      },
+                      child: SizedBox(
+                          height: 170,
+                          width: 200,
+                          child: Image.asset("assets/images/cupkake_cat.png")),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 100,
+              left: 40,
+              child: SizedBox(
+                height: 20,
+                child: Column(
+                  children: [
+                    Text(
+                      "Moglis Cup",
+                      style: GoogleFonts.alata(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 80,
+              left: 40,
+              child: SizedBox(
+                height: 20,
+                child: Column(
+                  children: [
+                    Text(
+                      "Strawberry ice cream",
+                      style: GoogleFonts.alata(
+                        color: Colors.white70,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 50,
+              left: 40,
+              child: Row(
+                children: [
+                  SizedBox(
+                      height: 15,
+                      width: 15,
+                      child: Image.asset("assets/images/Vector.png")),
+                  Text("8.99",
+                      style:
+                          GoogleFonts.alata(fontSize: 15, color: Colors.white)),
+                  SizedBox(
+                    width: 70,
+                  ),
+                  Text("200",
+                      style: GoogleFonts.alata(
+                          fontSize: 15, color: Colors.white54))
+                ],
+              ),
+            ),
+            Positioned(
+              bottom: 30,
+              right: -45,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: const Color.fromARGB(255, 155, 84, 179),
+                ),
+                height: 280,
+                width: 200,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 170,
+                      width: 200,
+                      child: Image.asset("assets/images/icecream.png"),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 100,
+              right: 70,
+              child: SizedBox(
+                height: 20,
+                child: Column(
+                  children: [
+                    Text(
+                      "Balus Cup",
+                      style: GoogleFonts.alata(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 80,
+              right: 10,
+              child: SizedBox(
+                height: 20,
+                child: Column(
+                  children: [
+                    Text(
+                      "Pistachio ice cream",
+                      style: GoogleFonts.alata(
+                        color: Colors.white70,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: 50,
+              right: -8,
+              child: Row(
+                children: [
+                  SizedBox(
+                      height: 15,
+                      width: 15,
+                      child: Image.asset("assets/images/Vector.png")),
+                  Text("8.99",
+                      style:
+                          GoogleFonts.alata(fontSize: 15, color: Colors.white)),
+                  SizedBox(
+                    width: 70,
+                  ),
+                  Text("100",
+                      style: GoogleFonts.alata(
+                          fontSize: 15, color: Colors.white54))
+                ],
               ),
             ),
           ],
