@@ -1,0 +1,1 @@
+ /Users/torsteng./Desktop/Kapitel\ 3\ \ Code/Wichtige\ Flutter\ Codes/YumYumSnackys/YumYumSnakys2.0/YumYumSnackys/.dart_tool/flutter_build/7deb15a8fa11c09cedca393620bbba8d/native_assets.yaml: 

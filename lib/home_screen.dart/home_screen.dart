@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+
 import 'package:google_fonts/google_fonts.dart';
-import 'package:yumyumsnackys/detail_screen/detail_screen.dart';
+
+import 'package:yumyumsnackys/DetailScreen/detail_screen_small.dart';
 
 void main() {
   runApp(HomeScreen());
@@ -62,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                         color: Colors.white30),
                     height: 40,
-                    width: 10,
+                    width: 130,
                     child: Center(
                       child: Text(
                         "All catogorie",
@@ -123,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -132,9 +133,12 @@ class HomeScreen extends StatelessWidget {
               top: 240,
               right: 20,
               left: 20,
-              child: Center(
-                child: Image.asset(
-                  "assets/images/cut_card.png",
+              child: Opacity(
+                opacity: 0.5,
+                child: Center(
+                  child: Image.asset(
+                    "assets/images/cut_card.png",
+                  ),
                 ),
               ),
             ),
@@ -173,6 +177,7 @@ class HomeScreen extends StatelessWidget {
                     height: 20,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       SizedBox(
                         height: 15,
@@ -192,9 +197,44 @@ class HomeScreen extends StatelessWidget {
                     height: 50,
                   ),
                   Container(
+                    decoration: BoxDecoration(
+                      boxShadow: <BoxShadow>[
+                        BoxShadow(
+                          offset: Offset(0, -3),
+                          spreadRadius: 0,
+                          blurRadius: 24.0,
+                          color: Color(0xFF9375B6),
+                        ),
+                        BoxShadow(
+                          offset: Offset(0, 0),
+                          spreadRadius: 0,
+                          blurRadius: 5.0,
+                          color: Color(0xFFFFACE4),
+                        ),
+                        BoxShadow(
+                          offset: Offset(0, 0),
+                          spreadRadius: 0,
+                          blurRadius: 90,
+                          color: Color.fromARGB(126, 234, 113, 198),
+                        ),
+                      ],
+                      border: Border.all(
+                        width: 1,
+                        color: const Color.fromARGB(255, 233, 173, 193),
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      color: const Color.fromARGB(255, 189, 61, 189),
+                      gradient: LinearGradient(
+                        begin: Alignment.topRight,
+                        end: Alignment.bottomLeft,
+                        colors: [
+                          Color(0xFF908Cf5),
+                          Color(0xFFBB8DE1),
+                        ],
+                      ),
+                    ),
                     height: 40,
                     width: 100,
-                    color: const Color.fromARGB(255, 189, 61, 189),
                     child: Center(
                         child: Text(
                       "Add to order",
@@ -234,7 +274,15 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: const Color.fromARGB(255, 155, 84, 179),
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color.fromARGB(0, 255, 255, 255),
+                      Color(0xFF908CF5),
+                      Color(0xFF8C5BEA),
+                    ],
+                  ),
                 ),
                 height: 280,
                 width: 200,
@@ -245,7 +293,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => DetailScreen()));
+                                builder: (context) => DetailScreenSmall()));
                       },
                       child: SizedBox(
                           height: 170,
@@ -319,13 +367,21 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
-                  color: const Color.fromARGB(255, 155, 84, 179),
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color.fromARGB(0, 255, 255, 255),
+                      Color(0xFF908CF5),
+                      Color(0xFF8C5BEA),
+                    ],
+                  ),
                 ),
                 height: 280,
                 width: 200,
                 child: Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 170,
                       width: 200,
                       child: Image.asset("assets/images/icecream.png"),

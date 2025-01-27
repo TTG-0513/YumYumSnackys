@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yumyumsnackys/FeatureOrdner/order_now_button.dart';
 import 'package:yumyumsnackys/home_screen.dart/home_screen.dart';
 
 void main() {
@@ -54,43 +55,58 @@ class StartApp extends StatelessWidget {
             ),
           ),
           Positioned(
+            bottom: 230,
+            left: 50,
+            child: SizedBox(
+              height: 100,
+              width: 300,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Center(
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      "Feeling Snackish Today?",
+                      style: TextStyle(
+                          color: Color(0xFFFFFFFF),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 22),
+                    ),
+                  ),
+                  Center(
+                    child: Text(
+                      textAlign: TextAlign.center,
+                      "Explore Angis most popular snack selecton and get instantly happy",
+                      style: TextStyle(
+                          color: Color.fromARGB(188, 255, 255, 255),
+                          fontSize: 13),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Positioned(
             bottom: 100,
             left: 20,
             right: 20,
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
-                color: Colors.white24,
+                color: Colors.white10,
               ),
               height: 250,
               width: 380,
             ),
           ),
           Positioned(
-              bottom: 160,
-              right: 100,
-              child: Container(
-                  child: Center(
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => HomeScreen()));
-                          },
-                          child: Text(
-                            "Order Now",
-                            style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white70),
-                          ))),
-                  height: 50,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    color: Colors.pinkAccent,
-                  ))),
+            bottom: 160,
+            right: 100,
+            child: Center(
+              child: OrderNowButton(),
+            ),
+          ),
         ],
       ),
     );

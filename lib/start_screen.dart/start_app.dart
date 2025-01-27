@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yumyumsnackys/feature_order.dart/order_now_button.dart';
+import 'package:yumyumsnackys/FeatureOrdner/order_now_button.dart';
 
 class StartApp extends StatelessWidget {
   const StartApp({super.key});
@@ -53,17 +53,7 @@ class StartApp extends StatelessWidget {
                 width: 380,
               ),
             ),
-            Positioned(
-                bottom: 160,
-                right: 100,
-                child: Container(
-                    child: Center(child: OrderNowButton()),
-                    height: 50,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      color: Colors.pinkAccent,
-                    ))),
+            Container(alignment: Alignment.center, child: OrderNowButton()),
           ],
         ),
       ),
